@@ -1,6 +1,7 @@
-import { Component, EventEmitter, Input, Output, CommonModule } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Project } from '../models/project.model';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-funding-form',
@@ -8,7 +9,7 @@ import { Project } from '../models/project.model';
   imports: [CommonModule],
   template: `
     <div class="card" *ngIf="project">
-      <h2>Fund {{ project.tite }}</h2>
+      <h2>Fund {{ project.title }}</h2>
       <input
         type="number"
         class="input"
@@ -21,7 +22,7 @@ import { Project } from '../models/project.model';
   `
 })
 export class FundingFormComponent {
-  @Input() project: Project = null;
+  @Input() project!: Project;
   @Output() onSubmit = new EventEmitter<{project: Project, amount: number}>();
   amount: number = 0;
 

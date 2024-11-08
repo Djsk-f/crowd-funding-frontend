@@ -16,6 +16,6 @@ import { Project } from '../models/project.model';
   `
 })
 export class ProjectCardComponent {
-  @Input() project: Project;
+  @Input() project!: Project;
   @Output() onFund = new EventEmitter<Project>();
 }

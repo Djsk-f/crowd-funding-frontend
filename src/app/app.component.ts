@@ -1,4 +1,7 @@
+import { Project } from './models/project.model';
 import { Component } from '@angular/core';
+import { FundingFormComponent } from "./components/funding-form.component";
+import { ProjectCardComponent } from "./components/project-card.component";
 
 @Component({
   selector: 'app-root',
@@ -16,7 +19,8 @@ import { Component } from '@angular/core';
         </app-project-card>
       </div>
     </div>
-  `
+  `,
+  imports: [FundingFormComponent, ProjectCardComponent]
 })
 export class AppComponent {
   projects: Project[] = [
@@ -54,7 +58,7 @@ export class AppComponent {
     if (projectIndex === -1) {
       this.projects[projectIndex] = {
         ...this.projects[projectIndex],
-        raised: this.projects[projectIndex].raised + event.amount
+        raised: this.projects[projectIndex].raised? + event.amount : undefined
       };
       this.selectedProject = null;
     }

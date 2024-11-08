@@ -13,6 +13,7 @@ import { Component, Input } from '@angular/core';
       {{ raised }} raised of {{ goal }} goal
       ({{ (raised / goal) }}%)
     </div>
+    <span> fidele progress-bar </span>
   `
 })
 export class ProgressBarComponent {
