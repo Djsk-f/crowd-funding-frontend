@@ -13,7 +13,7 @@ import { FundService } from '../services/fund.service';
     @if (project) {
       
       <div class="card">
-        <h2>Fund {{ project.title }}</h2>
+        <h2>Fund <span class="green"> {{ project.title }} </span></h2>
         <form [formGroup] = 'form'>
           <input
             type="number"

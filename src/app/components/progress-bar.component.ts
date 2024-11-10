@@ -1,12 +1,14 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { ProgressPipe } from '../pipes/progress.pipe';
 
 @Component({
   selector: 'app-progress-bar',
+  imports: [ProgressPipe],
   standalone: true,
   styleUrl: '../../styles/_progress.scss',
   template: `
     <div class="progress-bar">
-      <div [style.width.%]="progress"
+      <div [style.width.%]="progress | progres"
         class="progress-bar-fill">
       </div>
     </div>
