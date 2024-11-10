@@ -1,10 +1,11 @@
 import {
   BrowserModule,
   DomRendererFactory2
-} from "./chunk-BOAMGFTV.js";
+} from "./chunk-HDI6P7OZ.js";
+import "./chunk-PMPNESLB.js";
 import {
   DOCUMENT
-} from "./chunk-FHF5ZHRB.js";
+} from "./chunk-JCR66VAS.js";
 import {
   ANIMATION_MODULE_TYPE,
   Inject,
@@ -14,8 +15,6 @@ import {
   RendererFactory2,
   RuntimeError,
   ViewEncapsulation$1,
-  __objRest,
-  __spreadValues,
   inject,
   performanceMarkFeature,
   setClassMetadata,
@@ -23,7 +22,11 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject
-} from "./chunk-WGMYJ6PB.js";
+} from "./chunk-BXZJFZZJ.js";
+import {
+  __objRest,
+  __spreadValues
+} from "./chunk-6EXQV4WU.js";
 
 // node_modules/@angular/animations/fesm2022/animations.mjs
 var AnimationMetadataType;

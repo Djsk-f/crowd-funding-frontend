@@ -1,7 +1,9 @@
 export interface Project {
-  id?: number;
+  id: string;
   title?: string;
   description?: string;
-  goal?: number;
-  raised?: number;
+  image?: string;
+  raised: number;
+  goal: number;
+  createAt?: number
 }
