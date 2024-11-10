@@ -1,0 +1,15 @@
+.container {
+
+    background: rgb(247, 246, 246);
+    margin: auto;
+    padding: 20px 150px;
+    height: 100vh;
+}
+
+@media (max-width: 768px) { 
+    
+    .container {
+
+        padding: 10px;
+    }
+}
